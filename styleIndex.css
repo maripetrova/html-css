@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+.container {
+    height: 90vh;
+    width: 90vh;
+    background-color: cornflowerblue;
+    margin: 5vh auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row; 
+    /*направление основной оси
+    row - расположение элементов с лева на право.
+    row-reverse - расположение элементов с права на лево.
+    colomn - сверху в низ
+column-reverse - с низу вверх
+    */
+    justify-content: center;
+    /*
+    Выравнивание flex-элементов вдоль осносной оси(относительно соответствующего размера контейнера)
+    flex-start - первый элемент с начала оси(с левого края)
+    flex-end последний элемент рядом с окончанием оси(с правого края) 
+    space-around одинаковые отступы вокруг элемента
+    space-between одинаковое расстояние между элементами
+    */
+    align-items: center;
+    /*
+    Расположение элементов вдоль поперечной оси
+     stretch растянуть по размеру
+     flex-start по началу оси
+     flex-end по концу
+    */
+}
+.card {
+    padding: 20px;
+    font: 30px / 1 sans-serif;
+    border-radius: 50%;
+    background-color: rgba(38, 63, 155, 0.345);
+    color: rgb(65, 0, 157);
+    text-align: center;
+    cursor: pointer;
+}
+.card:hover {
+background-color: dodgerblue;
+}
