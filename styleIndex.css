@@ -13,7 +13,7 @@ body {
     row - расположение элементов с лева на право.
     row-reverse - расположение элементов с права на лево.
     colomn - сверху в низ
-column-reverse - с низу вверх
+    column-reverse - с низу вверх
     */
     justify-content: center;
     /*
