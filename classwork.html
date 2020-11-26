@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(240, 191, 191);
+        }
+        .header{ 
+            display: flex;
+        }
+        .cards-container {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            border-bottom: 3px solid red;
+            border-top: 3px solid red;
+            /*flex-wrap- разбивает контейнер на несколько строчек, елси они не залезают в одну
+            no-wrap- по умолчанию
+            warp
+            warp-reverse 
+            */
+            /*
+            aling-content - выравнивание СТРОК вдоль поперечной оси
+            space-between, space-around, flex-stsrt, flex-end, center, stretch
+            */
+        }
+        .card {
+            width: calc( 100% / 3 - 100px / 3);
+            border: 1px solid black;
+            padding: 20px;
+            color: red;
+            border-radius: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            /*
+            box-sizing - правило задается по какому принципу работает правила width и height
+            content-sizing- только по размерам контента
+            border-sizing- контент + внутренний отступ + граница
+            */
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .lines-container {
+            display: flex;
+            justify-content: space-between;
+           width: 40%;
+            padding: 15px;
+            align-items: center;
+            flex-wrap: wrap; 
+        }
+        .lines {
+            width: calc(100% / 4 - 100px / 4);
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 4px;
+            color: red;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 5px;
+        }
+        .img {
+            padding: 20px;
+            width: 50%;
+        }
+        .imgTwo {
+            background-image: url(https://cdn.shopify.com/s/files/1/0033/4095/9793/collections/Nutella_1200x1200.png?v=1591111296);
+            background-repeat: no-repeat;
+         background-position: center ;
+         height: 200px;
+        }
+        .bottom {
+            display: flex;
+            margin: 20px;
+            text-align:center;
+        }   
+        .bo-container {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            padding: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            resize: both;
+        
+        }
+        .text {
+            font-size: 20px;
+            width: 50%;
+            color: red;
+            margin-top: 10px;
+        }
+        select, input, form {
+            resize: none;
+            background: rgb(240, 191, 191);
+            color: red;
+            border: 1px solid black;
+           text-align: left;
+            margin-left: 143px;
+            padding: 10px;
+            border-radius: 20px;
+            float: right;
+        }
+        ::placeholder {
+            color: red;
+        }
+        .city {
+            margin-top: 30px;
+        }
+        .buy {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="img">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41KZJ-0xhKL.png" alt="" height="90px">
+        </div>
+    <div class="lines-container">
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+       <div class="lines">Line</div>
+</div>
+</div>
+<div class="imgTwo">
+</div>
+        <div class="cards-container">
+            <div class="card">Lorem ipsum dolor sit amet.</div>
+            <div class="card">Eligendi tempore optio unde explicabo!</div>
+            <div class="card">Vitae ad similique autem illo?</div>
+            <div class="card">Hic culpa consequuntur consectetur totam.</div>
+            <div class="card">Voluptate maxime perspiciatis quisquam est.</div>
+            <div class="card">Ab vel voluptas aut enim.</div>
+        </div>
+        <div class="bottom">
+<div class="text">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum exercitationem sint sed. Illo, eius eligendi? Consequatur voluptas eum nisi neque quia, labore laudantium velit sunt. Corrupti alias excepturi quam minima similique necessitatibus blanditiis nisi distinctio deserunt dignissimos accusantium soluta sapiente laboriosam laborum ad voluptatum quia repellendus cumque omnis velit optio, aliquid perferendis quae! Non commodi veniam voluptatum soluta consequuntur quibusdam animi in quis eum! Nobis voluptas, delectus odio ullam voluptates dolor distinctio quae ratione, obcaecati soluta maxime praesentium repellendus fuga!
+</div>
+<div class="bo-container">
+    <form action="" method="GET">
+        Ваш e-mail: <input type="text" name="e-mail" placeholder="e-mail">
+        <br>
+    <div class="city"> Ваш город:</div> <select name="city">
+            <option>Москва</option>
+            <option>Санкт-Петербург</option>
+            <option>Владимир</option>
+            <option>Омск</option>
+            <option>Барнаул</option>
+        </select>
+        <br> <br>
+        Выберите Nutella: <select name="choose">
+            <option>Nutella 180g</option>
+            <option>Nutella 350g</option>
+            <option>Nutella 650g</option>
+            <option>Nutella & Go</option>
+        </select>
+    <br>
+    <input type="submit" value="Купить Nutella" class="buy">
+    </form>
+</div>
+        </div>
+</body>
+</html>
