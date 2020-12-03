@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-color: rgb(233, 194, 181);
+    
+}
+.conteiner {
+    border: 2px solid darkseagreen;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 400px 1fr;
+    gap: 50px;
+}
+.main {
+    background: darkslateblue;
+}
+.header {
+    background: darkturquoise;
+}
+.nav {
+    background: fuchsia;
+    grid-column: 1 / span 1; /* начало блока у первой линии по оси х (при этом занимает он ровно 1 столбец) */
+    grid-row: 1 / span 2; /* начало блока у первой линии по оси у (при этом занимает он ровно 1 строки) */
+}

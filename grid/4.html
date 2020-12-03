@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+.kids {
+    min-height: 50px;
+    box-shadow: 0 2px 5px 0 rgb(255, 174, 0);
+    border-radius: 10px;
+}
+.cow {
+
+    width: 800px;
+    height: 800px;
+    margin: calc(50vh - 400px) auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 50px repeat(2, 1fr);
+    gap: 20px;
+    display: grid;
+    grid-template-areas:"danya danya danya danya"
+                        "anton kolya kolya kolya"
+                        "anton marina nikita nikita"
+                        "anton marina mari mari";
+}
+.ck1 {
+    background: crimson;
+    grid-area: danya;
+}
+.ck2 {
+    background: yellow;
+    grid-area: anton;
+}
+.ck3 {
+    background: springgreen;
+    grid-area: mari;
+}
+.ck4 {
+    background: darkgoldenrod;
+    grid-area: kolya;
+}
+.ck5 {
+    background: lightblue;
+    grid-area: nikita;
+}
+.ck6 {
+    background: blueviolet;
+    grid-area: marina;
+}
+</style>
+</head>
+<body>
+    <div class="cow">
+        <div class="kids ck1"></div>
+        <div class="kids ck2"></div>
+        <div class="kids ck3"></div>
+        <div class="kids ck4"></div>
+        <div class="kids ck5"></div>
+        <div class="kids ck6"></div>
+    </div>
+</body>
+</html>

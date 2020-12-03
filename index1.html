@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интересные вкусняшки</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Raleway&display=swap');
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: linear-gradient(#E6B1A5, #A48EE6);
+            font: 22px 'Josefin Sans', sans-serif;
+            padding: 50px calc(50% - 350px);
+            overflow-x: hidden;
+        }
+        h2 {
+            font: 700 60px 'Raleway', sans-serif;
+            text-align: center;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p {
+            text-align: justify;
+            margin: 50px 0;
+        }
+        p::before { /* Мниным элемент перед заданным селектором*/
+        content: " ";
+        color: #F7F0A1;
+        font: 600 20px 'Raleway', sans-serif;
+        }
+        p::after {
+            content: attr(title);
+            color: #F7F0A1;
+            font: 600 20px 'Raleway', sans-serif;
+            padding-left: 1rem;
+        }
+        h2::before, h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: bisque;
+        }
+        .otec {
+            height: 500px;
+            background-color: rgba(0,0,0,.2);
+            position: relative;
+        } /*Абсолютное позиционированное сдвигает элемент относительно ближайщего родителя с position отличным от  static, если такого родителя нет, то относительно viewport
+        Элемент не сохраняет свое место в контенте*/
+        .ditya {
+            width: 100px;
+            height: 100px;
+            background:cornsilk;
+            border: 1px dotted bisque;
+            border-color: #83E6C2;
+            position: static; /*Статичное расположение тегов как они себя чувствуют в html коде*/
+        }
+        .dite1 {
+            border-radius: 50%;
+            border-color: #A48EE6;
+            position: absolute;
+            /* top || left || right || bottom */
+            top: -14px;
+            bottom: 100px;
+            right: 577px;
+        }
+        .dite1:hover{
+            right: 50px;
+        }
+        .dite2 {
+            background: #A48EE6;
+            border-color: cornsilk;
+            position: relative;
+            top: -20px;
+            left: 20px;
+            z-index: -1;
+            /*
+               Относительное позиционирование (relative) сдвигает элемент относительно своего изначального местоположения, с сохранением места в контенте.
+            */
+        }
+        .dite3 {
+            border-radius: 20px 100px 10px;
+            border-color: #A48EE6;
+            /* width: auto;
+            height: auto; */
+            left: 160;
+            /* right: 200px; */
+            top: 270px;
+            /* bottom: 200px; */
+            position: fixed;
+            /* Фиксированное позиционирование распологает элемент относительно границ экрана (viewport)*/
+        }
+.house {
+    width: 200px;
+    height: 200px;
+    background: rgb(140, 44, 27);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.house::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 60px 0 0 0px #fff;
+    display: block;
+}
+.house::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid transparent;
+    border-bottom: 70px solid yellowgreen;
+    border-left: 70px solid transparent;
+    border-right: 130px solid transparent;
+    top: -70px;
+    left: 0;
+    position: absolute;
+
+}
+    </style>
+</head>
+<body>
+    <h2>Страшное позиционирование!!!</h2>
+    <div class="otec">
+        <div class="ditya dite1"></div>
+        <div class="ditya dite2"></div>
+        <div class="ditya dite3"></div>
+        <div class="house"></div>
+    </div>
+    <h2>Псевдоэлементы</h2>
+    <p title="First Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse pariatur impedit doloremque error. Dolor ipsam atque eius odio debitis reiciendis.</p>
+    <p title="Second Paragraph">Assumenda placeat iusto possimus minus. Numquam magni facilis atque excepturi mollitia, totam ad quae deserunt! Commodi consequatur dolore dolorem suscipit.</p>
+    <p title="Third Paragraph">Perferendis minima rerum maiores ex beatae eligendi sit aut soluta, voluptas vero nulla at laudantium excepturi omnis aperiam doloribus nesciunt!</p>
+</body>
+</html>
