@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Tags</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: 50px;
+            padding: 10px 0;
+        }
+        .logo {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent;
+            border-top: 50px solid salmon;
+            border-left-width: 25px;
+            border-right-width: 25px;
+            animation: rotateT 3s linear infinite;
+            transform-origin: 25px 20px;
+        }
+        .soc {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid salmon;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: salmon;
+        }
+        @keyframes rotateT {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <ul class="soc">
+        <li class="link"><a href="">VK</a></li>
+        <li class="link"><a href="">Inst</a></li>
+        <li class="link"><a href="">Fb</a></li>
+    </ul>
+</header>
+<main>
+    <section>
+        <h1>Это секция по программированию</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores atque cumque facere nam,
+            necessitatibus officia ratione repellendus reprehenderit sequi. Atque autem blanditiis doloribus excepturi
+            iusto modi repellendus repudiandae veritatis!</p>
+        <p>Dicta earum et harum omnis sapiente sed? Aut distinctio earum ipsam libero magnam magni, natus nobis numquam
+            sequi suscipit tenetur vero? Autem cum dolores eius incidunt, natus porro quo ratione!</p>
+    </section>
+    <section>
+        <h1>Это секция по разработке</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores atque cumque facere nam,
+            necessitatibus officia ratione repellendus reprehenderit sequi. Atque autem blanditiis doloribus excepturi
+            iusto modi repellendus repudiandae veritatis!</p>
+        <p>Dicta earum et harum omnis sapiente sed? Aut distinctio earum ipsam libero magnam magni, natus nobis numquam
+            sequi suscipit tenetur vero? Autem cum dolores eius incidunt, natus porro quo ratione!</p>
+    </section>
+    <details>
+        <summary>Тут что-то будет</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate dolores fugit itaque iusto laborum,
+            odit officia praesentium qui totam.</p>
+        <p>Blanditiis officiis quisquam veritatis? Ab corporis cupiditate deserunt dicta est itaque iusto laudantium
+            minima nulla numquam praesentium, sunt totam voluptatum.</p>
+    </details>
+    <figure>
+        <img src="">
+        <figcaption>Тут кто-то</figcaption>
+    </figure>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptatem.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores corporis cupiditate dolore earum
+        enim exercitationem inventore minus officiis provident quasi, repellat sint tempore voluptates voluptatibus?
+        Atque distinctio et libero ut! Ad asperiores assumenda esse ex fuga incidunt magnam nihil quasi quibusdam quis
+        quod, quos saepe? Error molestiae molestias voluptatem?</p>
+    <p>A ad alias commodi cumque dolor ducimus enim est excepturi id ipsum magnam, numquam optio reiciendis repudiandae
+        sed unde veniam! Ab adipisci aut, beatae blanditiis culpa cumque deleniti dignissimos doloribus dolorum esse
+        facilis fugit hic, nemo neque nisi odio officia perspiciatis quos sint, tempora! In neque quis sed vero
+        voluptas!</p>
+</main>
+<footer style="background: #222">
+    <nav class="soc" style="justify-content: center; padding: 20px">
+            <a class="link" href="">VK</a>
+            <a class="link" href="">Inst</a>
+            <a class="link" href="">Fb</a>
+    </nav>
+</footer>
+</body>
+</html>
