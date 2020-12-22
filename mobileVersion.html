@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    name - название метатега
+    http-equiv - эмуляция заголовков от сервера
+    content - информация, которую передаем поисковым роботам
+    -->
+    <meta name="author" content="Me">
+    <meta name="description" content="О чем эта страница в мире">
+    <meta name="keywords" content="мир квадрат пол">
+    <meta name="robots" content="index, nofollow">
+    <meta name="google" content="no-translate">
+    <meta name="viewport" content="width=device=width">
+    <title>Mobile</title>
+    <style>
+        body {
+            margin: 0;
+            background: red;
+        }
+        .cards {
+            padding: 50px calc(50% - 500px);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+        }
+        .card {
+            padding: 20px;
+            background: #fff;
+            color: red;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 2px crimson;
+        }
+        @media print {
+            .card {
+                color: #000;
+                box-shadow: none;
+                border-color: #000;
+            }
+        }
+        @media (max-width: 1100px) {
+            body {
+                padding: 50px;
+                background: greenyellow;
+            }
+        }
+        @media (max-width: 250px) and (max-width: 400px) {
+            body {
+                background: blueviolet;
+            }
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 401px) and (max-width: 700px) {
+            body {
+                background: orangered;
+            }
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cards">
+    <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus eaque excepturi
+        fugit inventore modi pariatur placeat quos similique vitae.
+    </div>
+    <div class="card">Adipisci aliquid architecto cum dignissimos error eum nam obcaecati praesentium sunt tempore!
+        Aperiam eum modi nemo saepe sint soluta vero.
+    </div>
+    <div class="card">Ad, consequatur cumque dolorem dolores est et, facilis id illo ipsam, maiores molestias nulla
+        officiis placeat quae quo recusandae similique.
+    </div>
+    <div class="card">A ab ad corporis cumque delectus dolores explicabo illum inventore modi nemo neque nisi nostrum,
+        qui sapiente tempora voluptas voluptate!
+    </div>
+    <div class="card">Aperiam aspernatur, consectetur consequatur eum omnis reiciendis sint veritatis voluptate?
+        Consectetur, dicta ea eveniet inventore ipsam nihil numquam quia veritatis!
+    </div>
+    <div class="card">Culpa eum, itaque, iure iusto, laudantium necessitatibus nostrum perspiciatis praesentium quas
+        quos recusandae sequi voluptas! Dicta quae temporibus unde voluptatum.
+    </div>
+    <div class="card">A culpa cum error impedit iure molestiae molestias natus provident qui sunt? Corporis dolor
+        dolorem eligendi ipsa, laborum nemo sapiente.
+    </div>
+    <div class="card">Assumenda aut commodi explicabo ipsam itaque laboriosam libero possimus quas ratione similique,
+        vel, veritatis. Exercitationem inventore iste quos sint veniam?
+    </div>
+    <div class="card">Asperiores consequatur culpa, ea enim eveniet fuga harum, maiores modi molestias, mollitia numquam
+        porro quia recusandae repudiandae sint tempore ullam.
+    </div>
+    <div class="card">Ab, alias aut beatae consectetur doloremque ducimus ipsa libero magni nam necessitatibus nisi,
+        nobis nulla porro quaerat qui, tenetur unde?
+    </div>
+    <div class="card">Aliquam, aliquid aperiam architecto doloremque, exercitationem itaque iure molestias nostrum quam,
+        quasi recusandae repellat sint tenetur. Dignissimos eius id molestias.
+    </div>
+    <div class="card">Aut dolore dolorum exercitationem nihil quidem! Consequatur cumque dignissimos doloribus eaque
+        maxime quaerat reiciendis sapiente soluta sunt vel! Tempora, veritatis!
+    </div>
+</div>
+</body>
+</html>
